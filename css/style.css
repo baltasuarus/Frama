@@ -153,15 +153,18 @@ ul.nav li.active a {
     color: #fb5353;
 }
 .navbar-nav>li>a {
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
-	    padding: 7px 10px;
+		padding: 7px 10px;
+
+
 }
 .navbar-nav {
     margin: 0;
     float: none;
     display: inline-block;
+		padding: 11px 10px;
 }
 .container-fluid {
     padding: 0 50px;
@@ -193,7 +196,7 @@ span.fa.fa-angle-left, span.fa.fa-angle-right {
 	text-shadow: 0 4px 2px rgba(0,0,0,.6);
 }
 .carousel-inner {
-    height: 650px;
+    height: 590px;
 
 }
 .carousel-caption p {
@@ -233,7 +236,7 @@ span.b-head:hover {
 /* About */
 div#about {
     padding: 5% 0px;
-	background: #ffedf3;
+	background: #ffffff;
     color: #4d4d4d;
 }
 
@@ -314,8 +317,8 @@ ul.about-list li span.fa {
 div#service {
     padding: 5% 0px;
     text-align: center;
-	/*    background: rgba(233, 30, 99, 0.88);
-    color: honeydew; */
+	   background: #e5e5e5;
+  /*  color: honeydew; */
 }
 .service p.details {
     margin: 25px 0px 45px;
@@ -364,7 +367,7 @@ span.fa.fa-university {
 /*-- gallery --*/
 div#gallery {
     padding: 5% 0px;
-	    background: azure;
+	    background: #e5e5e5 ;
 }
 .gallery {
     text-align: center;
@@ -753,6 +756,7 @@ div#about p {
 }
 
 @media screen and (max-width: 1366px){}
+
 
 @media screen and (max-width: 1280px){
 	div#myCarousel,.carousel-inner {
