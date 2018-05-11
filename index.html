@@ -19,12 +19,37 @@
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" /> <!-- Testimonials js-->
 	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 
 	<!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,700i,800,900" rel="stylesheet">
 	  	<!-- scripts -->
 	<script src="js/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(function(){ // document ready
+
+           if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+
+         var stickyTop = $('.sticky').offset().top; // returns number
+
+  $(window).scroll(function(){ // scroll event
+
+  var windowTop = $(window).scrollTop(); // returns number
+
+  if (stickyTop < windowTop){
+     $('.sticky').css({ position: 'fixed', top: 0, width: '100%'});
+  } else {
+     $('.sticky').css('position','static');
+  }
+
+          });
+
+        }
+
+     });
+</script>
 </head>
 <body>
 	<div class="agile-banner">
@@ -88,8 +113,12 @@
 							<img src="images/banner4.png" alt="Los Angeles" style="width:100%;">
 						<div class="carousel-caption banner-dott">
 							<div class="carousel-caption1">
-								<h1> Decorate Your <span class="b-head"> World </span></h1>
-								<p>we make your world very very beatiful.</p>
+								<h1> <div class="animated bounceInLeft" style="margin-right: 200px ">
+
+								Enhance your</div>  <span class="b-head"><div class="animated bounceInRight" style="margin-left: 500px ">
+
+								 Space </div></span></h1>
+								<p class="animated bounceInLeft" >Handpick your form, color, material, and texture.</p>
 							</div>
 						</div>
 					</div>
@@ -98,8 +127,10 @@
 							<img src="images/banner5.png" alt="Chicago" style="width:100%;">
 						<div class="carousel-caption banner-dott">
 							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Home </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
+								<h2><div class="animated bounceInLeft" style="margin-right: 200px ">Revitalize Your</div> <span class="b-head">
+									<div class="animated bounceInRight" style="margin-left: 500px ">
+								 Office</div> </span></h2>
+								<p class="animated bounceInLeft">Bring comfort, form, and utlity to your work space.
 							</div>
 						</div>
 					</div>
@@ -108,101 +139,13 @@
 							<img src="images/banner6.png" alt="New York" style="width:100%;">
 						<div class="carousel-caption banner-dott">
 							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
+								<h2><div class="animated bounceInLeft" style="margin-right: 200px ">Decorate Your </div><span class="b-head">
+									<div class="animated bounceInRight" style="margin-left: 500px ">
+								 Home </div></span></h2>
+								<p class="animated bounceInLeft">Make it your own and customize anything you need.</p>
 							</div>
 						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner7.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner8.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner9.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner10.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner11.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner12.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner13.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner14.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner15.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-							<img src="images/banner16.png" alt="New York" style="width:100%;">
-						<div class="carousel-caption banner-dott">
-							<div class="carousel-caption1">
-								<h2>Decorate Your <span class="b-head"> Office </span></h2>
-								<p>Contrary to popular belief Lorem Ipsum is not simply random text.</p>
-							</div>
-						</div>
-					</div>
+          </div>
 					<!-- Left and right controls -->
 					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 						<span class="fa fa-angle-left"></span>
@@ -215,7 +158,11 @@
 				</div>
 		</div>
 
-<nav class="navbar w3-navbar">
+
+<!--/////Navbar dinámico\\\\-->
+<div class="sticky">
+<nav class="navbar w3-navbar" >
+
 							<div class="container-fluid">
 								<div class="nav-top">
 									<div class="w3-contact">
@@ -243,33 +190,31 @@
 							</div> <!-- end row -->
 						</div> <!-- end container -->
 				</nav> <!-- end navbar -->
-	</div>
+	</div>	</div>
+<div class="wrapper">
 
 	<!-- Services -->
 	<div class="service" id="service">
 	  <h3 class="center">Our Mission</h3>
 	  <div class="container">
-	    <h4>Striving specialists in interior and exterior design</h4>
-	    <p class="details">Frama Exclusives is an interior design firm dedicated to creating modern, individualistic interiors that embody your personal story or brand. </p>
+	    <h4>Working together to create unique and beautifully finished spaces.</h4>
+	    <p class="details">We specialize in high-end custom drapery and soft goods. With a designer's taste and eye for style plus our technical knowledge and
+				experience we partner with you to create truly unique works. </p>
 	    <div class="service-list">
 				<div class="service1">
 					<span class="fa fa-magic" aria-hidden="true"></span>
-					<h5>Interior Designs</h5>
-					<p>TBD</p>
+					<h5>Creative Magic</h5>
+					<p>The magic is in the details. Every single thread and cut on our projects is carefully thought out.</p>
 				</div>
 				<div class="service2">
 					<span class="fa fa-id-badge" aria-hidden="true"></span>
-					<h5>Exterior Designs</h5>
-					<p>TBD</p>
+					<h5>Collaboration</h5>
+					<p>We work  closely with clients and designers, from measurement to installation to ensure success for each project.</p>
 				</div>
 				<div class="service3">
 					<span class="fa fa-scissors" aria-hidden="true"></span>
-					<h5>Upholstery services</h5>
-					<p>We offer upholstery services for any project big or
-						 small, whether you’re working with a designer already
-						 or would like our expertise in coordinating fabrics
-						 for a project. We also ship Fabric, Cushions, Window
-						  Coverings, and Furniture throughout the United States.</p>
+					<h5>Craftmanship</h5>
+					<p>Each piece is handmade and custom designed to match your unique taste. We take pride in our fine craftmanship honed over the last 30 years.   </p>
 				</div>
 			</div>
 		</div>
@@ -288,7 +233,7 @@
 							<span class="fa fa-home" aria-hidden="true"></span>
 							<div class="in-block">
 							  <h5>Family Owned</h5>
-							  <p> Family owned and operated in Wilton, CT since 1995. Frama Exclusives specializes in all things upholstered, custom built furniture and commercial seating. </p>
+							  <p> Women owned and operated in Wilton, CT since 1995. Frama Exclusives specializes in all things upholstered, custom built furniture and commercial seating. </p>
 							</div>
 						</li>
 						<li>
@@ -301,10 +246,11 @@
 						<li>
 						<span class="fa fa-star" aria-hidden="true"></span>
 							<div class="in-block">
-								<h5>Acknowledgments</h5>
+								<h5>Recognized</h5>
 								<p>We’ve been lucky enough to have our work featured
 									in several magazines including Country Living, Westport
-									Magazine, and Connecticut Cottage.</p>
+									Magazine, and Connecticut Cottage, Elle Decor, Better Homes and Gardens,
+									Architechtural Digest, House Beautiful,  Interior Design,  Luxe, Veranda, and Wilton Magazine. </p>
 								</div>
 							</li>
 						</ul>
@@ -415,6 +361,8 @@
 		<!-- //light box js-->
 	</div>
 	<!-- //gallery -->
+
+
 	<!-- testimonials -->
 	<div class="w3ls-testimons" id="testimon">
 		<h3 class="center">Our Reviews</h3>
@@ -423,40 +371,37 @@
 				<section class="slider">
 					<div class="flexslider">
 						<ul class="slides">
+
 							<li>
 								<div class="user-review">
 								<div class="usr-txt">
-									<h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
-									<p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
-									<p class="usr-name">Michel Blobs, <span class="designation">Fashion Designer</span></p>
-								</div>
-								<div class="usr-img">
-									<img src="images/u1.jpg" alt="Customer1" class="img-responsive">
+									<h6 class="review">She has beautiful taste, is very creative and does a fabulous and thorough job.</h6>
+									<p class="indent">Maritza has been my go to person for 20 years for all of my window treatment and upholstery needs for decorating  my home. She has beautiful taste, is very creative and does a fabulous and thorough job. Most of all she is a lovely, hard working person and a pleasure to work with. I recommend Maritza to all of my friends and clients who are looking for such services.
+</p>
+									<p class="usr-name">Lynn Murphy, <span class="designation">Realtor</span></p>
 								</div>
 								</div>
 							</li>
+
+
 							<li>
 								<div class="user-review">
 								<div class="usr-txt">
-									<h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
-									<p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
-									<p class="usr-name">Nicolas Cage, <span class="designation">Senior Realter</span></p>
-								</div>
-								<div class="usr-img">
-									<img src="images/u2.jpg" alt="Customer1" class="img-responsive">
-								</div>
+									<h6 class="review">She has consistently done very beautiful work and has always met my project deadlines.</h6>
+									<p class="indent">I have known and worked with Maritza for several years, on many projects.  She has consistently done very beautiful work and has always met my project deadlines.  My clients adore her, and so do I.  
+</p>
+									<p class="usr-name">Richard McGeehan, <span class="designation">Designer</span></p>
 								</div>
 
-							</li>
-							<li>
-								<div class="user-review">
-								<div class="usr-txt">
-									<h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
-									<p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
-									<p class="usr-name">Simon Josef, <span class="designation"> Engineer </span></p>
+
+						    	<li>
+							   	<div class="user-review">
+							   	<div class="usr-txt">
+									<h6 class="review">Top quality window treatments and upholster, highly recommended.</h6>
+									<p class="indent">I’ve worked with Framas Exclusives for years with great results. 
+They provide top quality window treatments and upholstery, highly recommended!</p>
+									<p class="usr-name">Sharon Singer, <span class="designation"> Designer </span></p>
 								</div>
-								<div class="usr-img">
-									<img src="images/u3.jpg" alt="Customer1" class="img-responsive">
 								</div>
 								</div>
 							</li>
@@ -467,13 +412,15 @@
 		</div>
 	</div>
 	<!-- //testimonials -->
+
+
 	<!-- Contact -->
 	<div class="contact" id="contact">
 		<h3 class="center">Contact Us</h3>
 		<div class="container">
 			<div class="contact-me">
 				<p>For more information about our quality services or products feel free to call or email us!</p>
-				<form action="/" method="post">
+				<form action="correo/enviar.php" method="post">
 					<ul class="input">
 						<li><span class="fa fa-user-o" aria-hidden="true"></span>
 							<input type="text" name="full-name" placeholder="Full Name" required>
@@ -504,9 +451,10 @@
   <!-- copyright -->
   	<div class="copyright">
 		<div class="container">
-			<p> <span class="fa fa-creative-commons" aria-hidden="true"></span> 2018 Frama. | Edited by <a href=""> Betsabeth Torres </a></p>
+			<p> <span class="fa fa-creative-commons" aria-hidden="true"></span> 2018 Frama. | Edited by <a href="https://www.instagram.com/kya.alena/"> Betsabeth Torres </a></p>
 		</div>
 	</div>
+</div>
 	<!-- //copyright -->
   	<!-- scripts -->
 
@@ -564,4 +512,4 @@
 <!-- //scrolling script -->
 
 </body>
-</html>
+</html>l

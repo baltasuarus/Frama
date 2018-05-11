@@ -175,9 +175,11 @@ nav.navbar.w3-navbar {
     background: rgb(34, 36, 38);
     margin: 0;
 	border-radius: 0;
+
     
 
 }
+
 
 
 span.fa.fa-angle-left, span.fa.fa-angle-right {
@@ -201,7 +203,7 @@ span.fa.fa-angle-left, span.fa.fa-angle-right {
 	text-shadow: 0 4px 2px rgba(0,0,0,.6);
 }
 .carousel-inner {
-    height: 590px;
+    height: 520px;
 
 }
 .carousel-caption p {
@@ -211,7 +213,8 @@ span.fa.fa-angle-left, span.fa.fa-angle-right {
 }
 
 div#myCarousel {
-    height: 590px;
+    height: 520px;
+
 }
 .carousel-caption h1,.carousel-caption h2 {
     font-weight: 700;
