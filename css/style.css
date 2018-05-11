@@ -78,12 +78,14 @@ a:focus, a:hover {
     justify-content: space-between;
 	-ms-flex-pack: justify;
 	-ms-flex-pack: space-between;
+
 }
 .nav-top a:hover {
     color: #fb5353;
 }
 .w3-contact a {
     padding: 0px 10px;
+
 }
 .w3-contact {
     padding: 10px 0px;
@@ -156,7 +158,7 @@ ul.nav li.active a {
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
-		padding: 7px 10px;
+	padding: 7px 10px;
 
 
 }
@@ -164,7 +166,7 @@ ul.nav li.active a {
     margin: 0;
     float: none;
     display: inline-block;
-		padding: 11px 10px;
+	padding: 11px 10px;
 }
 .container-fluid {
     padding: 0 50px;
@@ -172,8 +174,11 @@ ul.nav li.active a {
 nav.navbar.w3-navbar {
     background: rgb(34, 36, 38);
     margin: 0;
-	    border-radius: 0;
+	border-radius: 0;
+    
+
 }
+
 
 span.fa.fa-angle-left, span.fa.fa-angle-right {
     font-weight: 400;
@@ -206,7 +211,7 @@ span.fa.fa-angle-left, span.fa.fa-angle-right {
 }
 
 div#myCarousel {
-    height: 650px;
+    height: 590px;
 }
 .carousel-caption h1,.carousel-caption h2 {
     font-weight: 700;
@@ -226,8 +231,12 @@ div#myCarousel {
 	    height: auto;
 		height: 590px;
 }
+
+.sticky{
+    z-index: 2;
+}
 span.b-head {
-    color: #E91E63;
+    color: #F44336;
 }
 span.b-head:hover {
     border-bottom: 2px solid #23d6c5;
@@ -292,7 +301,7 @@ ul.about-list li span.fa {
 	    height: 80px;
     width: 80px;
     vertical-align: top;
-	color: #e43873;
+	color: #F44336;
 }
 .in-block {
     display: inline-block;
@@ -368,15 +377,20 @@ span.fa.fa-university {
 div#gallery {
     padding: 5% 0px;
 	    background: #e5e5e5 ;
+
+}
 }
 .gallery {
     text-align: center;
 }
 .gallery-grids img {
     width: 100%;
+
+
 }
 .gallery-grids {
 	padding: 10px;
+    
 }
 /*-- gallery-hover effect --*/
 .w3ls-hover {
@@ -443,16 +457,18 @@ div#testimon {
 
 .user-review {
 	letter-spacing: 0.5px;
-	padding: 20px 0px;
+	padding: 50px 0px;
+    margin-top: -50px;
 }
 .usr-txt, .usr-img {
 	    padding: 0px 10px;
 }
 .usr-txt {
-    width: 70%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
-    padding-top: 5%;
+    padding-top: 1%;
+
 }
 .usr-img {
     width: 300px;
@@ -482,12 +498,28 @@ p.indent {
     margin-bottom: 10px;
 	    font-size: 15px;
 }
+@media (min-width: 1300px)   {
 p.usr-name {
-    padding-left: 60px;
-    color: #E91E63;
+    
+    color: #FF3333;
   /*  font-weight: bold; */
     font-size: 18px;
+    text-align: right;
 }
+}
+
+
+
+@media (max-width: 1125px) {
+p.usr-name {
+    padding-left: 53px; 
+    color: #FF3333;
+  /*  font-weight: bold; */
+    font-size: 18px;
+    text-align: left;
+}
+}
+
 span.designation {
     font-size: 14px;
     font-weight: 100;
@@ -786,8 +818,10 @@ div#about p {
     letter-spacing: 1px;
 }
 .usr-txt {
-    width: 70%;
+    
+    width: 100%;
 }
+
 .usr-img {
     width: 29%;
 }
@@ -1059,6 +1093,8 @@ ul.address {
 
 h6.review {
     font-size: 15px;
+
+
 }
 p.indent {
     font-size: 14px;
